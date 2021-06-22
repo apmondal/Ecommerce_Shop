@@ -14,6 +14,7 @@ const Product = ({ product }) => {
                 <Link
                     to={`/product/${product._id}`}
                     style={{ fontSize: '17px' }}
+                    className="text-decoration-none"
                 >
                     <Card.Title as='div'>
                         <strong>{product.name}</strong>

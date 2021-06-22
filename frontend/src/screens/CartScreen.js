@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { addToCart,removeFromCart } from '../actions/cartActions'
+import { addToCart, removeFromCart } from '../actions/cartActions'
 import {
     Row,
     Col,
@@ -58,7 +58,10 @@ const CartScreen = ({ match, location, history }) => {
                                         />
                                     </Col>
                                     <Col md={3}>
-                                        <Link to={`/product/${item.product}`}>
+                                        <Link
+                                            to={`/product/${item.product}`}
+                                            className='text-decoration-none'
+                                        >
                                             {item.name}
                                         </Link>
                                     </Col>
@@ -100,7 +103,7 @@ const CartScreen = ({ match, location, history }) => {
                                                 )
                                             }
                                         >
-                                            <i className='fas fa-trash'/>
+                                            <i className='fas fa-trash' />
                                         </Button>
                                     </Col>
                                 </Row>
