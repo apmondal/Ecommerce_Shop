@@ -31,7 +31,7 @@ const UserListScreen = ({ history }) => {
             dispatch(deleteUser(id))
         }
     }
-    
+
     return (
         <>
             <h1>Users</h1>
@@ -75,7 +75,7 @@ const UserListScreen = ({ history }) => {
                                 </td>
                                 <td>
                                     <LinkContainer
-                                        to={`admin/user/${user._id}/edit`}
+                                        to={`/admin/user/${user._id}/edit`}
                                     >
                                         <Button
                                             variant='light'
